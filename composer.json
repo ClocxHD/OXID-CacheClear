@@ -1,0 +1,16 @@
+{
+  "name": "fthielen/OXIDCacheClear",
+  "description": "Cache Clear Module for OXID eShop 6",
+  "type": "oxideshop-module",
+  "homepage": "https://github.com/ClocxHD",
+  "extra": {
+    "oxideshop": {
+      "target-directory": "fthielen/OXIDCacheClear"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "fthielen\\OXIDCacheClear\\": "../../../source/modules/fthielen/OXIDCacheClear"
+    }
+  }
+}
