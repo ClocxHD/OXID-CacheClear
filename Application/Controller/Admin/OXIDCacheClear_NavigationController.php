@@ -6,12 +6,17 @@ use OxidEsales\Eshop\Core\Registry;
 
 class OXIDCacheClear_NavigationController extends OXIDCacheClear_NavigationController_parent
 {
+    /**
+     * Executes the tmp-clear method, and outputs a success-message
+     */
     public function OXIDCacheClear_btn()
     {
         $excluded_files = ['.htaccess', '.htpasswd'];
         $tmp_dir = Registry::getConfig()->getConfigParam('sCompileDir');
 
         $this->_OXIDCacheClear_tmpClear($tmp_dir, $excluded_files);
+
+        echo Registry::getLang()->translateString("OXIDCacheClear_success", 0, 1);
     }
 
     /**

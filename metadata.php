@@ -15,6 +15,5 @@ $aModule = [
     ],
     "blocks" => [
         ['template' => 'header.tpl', 'block' => 'admin_header_links', 'file' => '/out/blocks/admin/OXIDCacheClear_header.tpl'],
-        ['template' => 'header.tpl', 'block' => 'admin_header_head', 'file' => '/out/blocks/admin/OXIDCacheClear_header_head.tpl'],
     ],
 ];
