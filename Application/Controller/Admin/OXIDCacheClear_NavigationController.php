@@ -17,6 +17,7 @@ class OXIDCacheClear_NavigationController extends OXIDCacheClear_NavigationContr
         $this->_OXIDCacheClear_tmpClear($tmp_dir, $excluded_files);
 
         echo Registry::getLang()->translateString("OXIDCacheClear_success", 0, 1);
+        exit;
     }
 
     /**
